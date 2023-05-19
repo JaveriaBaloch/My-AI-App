@@ -43,7 +43,7 @@ class _App extends State<App>{
 
   @override
   Widget build(BuildContext context){
-    const token = "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";
+    const token = "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";
     return Scaffold(
       appBar: AppBar(
        title: const Text("My AI App"),
@@ -149,7 +149,7 @@ class _App extends State<App>{
                                   createdAt: DateTime.now(),
                                 );
                                 messages.insert(0,msg);
-                                _translated = await _translation.translate(text: textEditingController.text, to: 'hi');
+                                _translated = await _translation.translate(text: textEditingController.text, to: 'ur');
                                 setState((){
                                   var msg2 = ChatMessage(
                                       text: _translated.translatedText,
